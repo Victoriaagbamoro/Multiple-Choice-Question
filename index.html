@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css"
+        integrity="sha384-IT8OQ5/IfeLGe8ZMxjj3QQNqT0zhBJSiFCL3uolrGgKRuenIU+mMS94kck/AHZWu" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Multiple Question</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="question-number">
+            <h1>Basic JavaScript Question</h1>
+            <h3>Questions <span class="question-num-value"></span> of <span class="total-question"></span></h3>
+        </div>
+        <div class="question">
+            
+        </div>
+        <div class="options">
+            <div id="0" class="option1" onclick="check(this)"></div>
+            <div id="1" class="option2" onclick="check(this)"></div>
+            <div id="2" class="option3" onclick="check(this)"></div>
+            <div id="3" class="option4" onclick="check(this)"></div>
+        </div>
+        <div class="button">
+            <button type="button" class="btn" onclick="next()">Next</button>
+        </div>
+        <div class="answers-tracker">
+            
+        </div>
+
+    </div>
+    <div class="quiz-over">
+        <div class="box">
+            <h1>
+            Good try! <br>
+            You Got <span class="correct-answers"> </span> out of
+           <span class="total-question2"> </span> answers correct! <br> 
+           That's <span class="percentage"> </span>try again.</h1>
+           <button type="button" onclick="tryAgain()">Try Again</button>
+        </div>
+    </div>
+ <script src="script.js"></script> 
+</body>
+</html>
